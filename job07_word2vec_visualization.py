@@ -7,13 +7,13 @@ from sklearn.manifold import TSNE
 from matplotlib import font_manager, rc
 import matplotlib as mpl
 
-font_path = './malgun.ttf'
+font_path = 'malgun.ttf'
 font_name = font_manager.FontProperties(fname=font_path).get_name()
 mpl.rcParams['axes.unicode_minus'] = False
 rc('font', family = font_name)
 
-embedding_model = Word2Vec.load('./models/word2vec_supplements_review.model')
-key_word = ('눈떨림') # 학습한 단어가 없으면 에러가 발생
+embedding_model = Word2Vec.load('./models/word2vec_supplements_okt.model')
+key_word = ('두통') # 학습한 단어가 없으면 에러가 발생
 sim_word = embedding_model.wv.most_similar(key_word, topn= 10) # 공간적으로 가까이 있는 단어를 의미(여기서 공간은 좌표를 말함)
 print(sim_word)
 

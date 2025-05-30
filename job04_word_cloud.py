@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt # 그래프 그를 때 사용하는 라이브러
 from matplotlib import font_manager # 폰트를 설정하기 위한 모듈
 
 # 한글 폰트 설정
-font_path = './malgun.ttf' # 사용할 한글 폰트 파일 경로
+font_path = 'malgun.ttf'  # 사용할 한글 폰트 파일 경로
 font_name = font_manager.FontProperties(fname = font_path).get_name()
 plt.rc('font', family = 'NanumBarunGothic') # Matplotlib에서 폰트 지정
 ## 워드 클라우드는 기본적으로 영어 폰트만 지원, 한글 글꼴 지정은 필수
@@ -17,7 +17,7 @@ stop_words = ['구미','젤리', '맛있다.']
 
 # 데이터 불러오기
 df = pd.read_csv('./cleaned_data/cleaned_supplements.csv') # 정제된 리뷰 데이터 불러오기
-print(df.head(320)) # 앞부분 출력해 확인
+print(df.head(10)) # 앞부분 출력해 확인
 
 # 특정 문장 선택 및 전처리 
 sentence = df.iloc[320,3] # 리뷰의 'reviews' 컬럼 내용 가져오기
