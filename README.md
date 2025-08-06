@@ -21,7 +21,7 @@
 - PyQT5
 
 
-<img width="300" height="265" alt="image" src="https://github.com/user-attachments/assets/0a91f4d1-362b-4466-8474-d7dffd05d08e" />
+<img width="1024" height="265" alt="image" src="https://github.com/user-attachments/assets/0a91f4d1-362b-4466-8474-d7dffd05d08e" />
 
 
 ## 세부설명
